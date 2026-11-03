@@ -1,0 +1,6 @@
+- hosts: local
+  tasks:
+    - name: Ensure lab log directory exists
+      file:
+        path: /tmp/lab3-logs
+        state: directory
